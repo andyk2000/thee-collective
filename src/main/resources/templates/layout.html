@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"
+    xmlns:th="http://thymeleaf.org"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/style/trial.css}" rel="stylesheet">
+    <title>The collective</title>
+</head>
+<nav class="navbar">
+    <img th:src="@{/images/Thee%20collective%20(3).png}" alt="Image 1" id="logo">
+    <ul class="left">
+        <li><a href="#">Home</a></li>
+        <li><a href="Authors.html">Authors</a></li>
+        <li><a href="Articles.html">Article</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a th:href="@{/user/new}">Login</a></li>
+    </ul>
+    <div class="right">
+        <form class="search-form" action="#" method="get">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<body layout:fragment="body"></body>
+</html>
