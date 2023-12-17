@@ -3,6 +3,7 @@ import jakarta.validation.constraints.NotEmpty;
 import lombok.Builder;
 import lombok.Data;
 
+import java.sql.Blob;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -20,5 +21,6 @@ public class ArticleDto {
     private String category;
     private LocalDate uploadedon;
     private String coverUrl;
+    private Blob cover;
     private int views;
 }

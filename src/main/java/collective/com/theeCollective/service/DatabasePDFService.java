@@ -7,12 +7,14 @@ import com.lowagie.text.pdf.PdfPCell;
 import com.lowagie.text.pdf.PdfPTable;
 import com.lowagie.text.pdf.PdfTable;
 import com.lowagie.text.pdf.PdfWriter;
+import org.springframework.stereotype.Service;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.util.List;
 import java.util.stream.Stream;
 
+@Service
 public class DatabasePDFService {
     public static ByteArrayInputStream articlePDFReport(List<ArticleDto> articles){
         Document document = new Document();

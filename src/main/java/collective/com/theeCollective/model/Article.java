@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 
+import java.sql.Blob;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -31,5 +32,7 @@ public class Article {
     @CreationTimestamp
     private LocalDate uploadedon;
     private String coverUrl;
+    @Lob
+    private Blob cover;
     private int views;
 }

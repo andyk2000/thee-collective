@@ -64,6 +64,7 @@ public class ArticleServiceImpl implements ArticleService {
                 .content(article.getContent())
                 .views(article.getViews())
                 .coverUrl(article.getCoverUrl())
+                .cover(article.getCover())
                 .build();
         return articleDto;
     }
@@ -79,6 +80,7 @@ public class ArticleServiceImpl implements ArticleService {
                 .summary(article.getSummary())
                 .uploadedon(article.getUploadedon())
                 .views(article.getViews())
+                .cover(article.getCover())
                 .build();
         return articleDto;
     }

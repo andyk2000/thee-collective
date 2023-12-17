@@ -8,6 +8,7 @@ import lombok.Data;
 public class AuthorDto {
     private int authorId;
     private String Names;
+    private String penName;
     private String email;
     private String password;
 }
